@@ -16,9 +16,16 @@
     box-sizing: border-box;
     font-family: 'ralewayregular', Tahoma;
 }
-/*.container {
-    width: 1000px;
-} */
+.container {
+    width: 1060px;
+    margin:0 auto;
+    display: block;
+} 
+.container::after{
+  content: "";
+  clear: both;
+  display: block;
+}
 header {
     background-color: black;
 }
@@ -47,17 +54,16 @@ ul>li {
     list-style-type: none;
 }
 .aqua {
-
     color: #24ba9f;
 }
 /*menu-top-right*/
 ol li {
-    float: right;
+    float: left;
     padding: 15px;
     color: white;
     display: inline-block;
-    margin-left: 10px;
-    top: 5px;
+    margin-left: 50px;
+
 }
 /*section with chair*/
 .chair {
@@ -82,20 +88,8 @@ chair::after {
     top: 0%;
     left: 150px;
 }
-.row {
-{
-    width: 1055px;
-    display: block;    
-   /* margin: 0 auto;*/
-  }
-}
-.row::after{
-  content: "";
-  clear: both;
-  display: block;
-}
 .arrow {
-    width: 80px;
+    width: 50px;
     height: 500px;
     padding-top: 210px;
     font-size: 80px;
@@ -121,12 +115,12 @@ h1 {
 }
 .txt-details {
     float: left;
-    width: 520px;
-    height: 500px;
+    width: 420px;
+    height: 400px;
     text-align: center;
     font-weight: 500;
     font-size: 14px;
-    padding: 120px 120px 0 10px;
+    padding: 120px 50px 0 10px;
     line-height: 1.4em;
     margin: 15px 25px;
 }
@@ -145,20 +139,9 @@ h1 {
 }
 /*article*/
 .articles {
-    float:left;
     width: 100%;
     background: white;
-    height: 350px;
-}
-.container {
-    display: block;
-    width: 1055px;
-    margin: 0 auto;
-}
-.container::after {
-    content: "";
-    display: block;
-    clear: both;
+    height: 250px;
 }
 .three-columns {
     float: left;
@@ -206,17 +189,14 @@ p {
 
 /*****price list***/
 .price-list {
-    height: 1050px;
     background: #f2f2f2;
 }
 .price-header {
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-bottom: 100px;
 }
 .price-list h2 {
     display:block;
-        /*display: inline-block;*/
     width: 250px;
     height: 4.5em;
     font-size: 18px;
@@ -241,7 +221,7 @@ p {
     text-align: center;
     border-radius: 3px;
     position: relative;
-    margin: 120px 0 30px 0;
+    margin: 0 0 30px 0;
 }
 .circle {
     width: 53px;
@@ -355,7 +335,7 @@ p {
     background-color: #ffffff;
     border-color: #24ba9f;
 }
-/* bcg 1-3 */
+/* bcg 1and3 */
 .price-other {
     background-color: #F5F5F5;
     border: 2px solid lightgrey;
@@ -378,7 +358,7 @@ p {
     width: 250px;
     height: 4.5em;
     font-size: 18px;
-    padding: 1.25em 0 0 1em;
+    /*padding: 1.25em 0 0 1em;*/
     margin-top: 20px;
 }
 .contact row:last-of-type h2 {
@@ -439,7 +419,6 @@ input[type='checkbox'] {
     height: 50px;
     left: 0;
     top: 0;
-    background-color: transparent;
     border: 1px solid rgba(54, 186,	139, 0.3);
 }
 input[type="checkbox"]:checked   label::before {
@@ -448,19 +427,20 @@ input[type="checkbox"]:checked   label::before {
     background-size: cover; 
 }
 input[type='submit'] {
-    color: white;
+    font-weight: 800;
+    color: #ffffff;
     float: right;
     width: 343px;
     height: 60px;
     font-size: 30px;
-    border: none;
+    border: 1px solid #24ba9f;
     border-radius: 10px;
     margin: 0 20px 0 0;
+    background-color: #24ba9f;
 }
-
 footer {
-    background-color: white;
-    margin-bottom: 30px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
 }
 footer::after {
     clear: both;
